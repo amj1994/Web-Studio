@@ -14,15 +14,14 @@
       rel="stylesheet"
     />
 
-    <!-- Preconnect to external image CDNs (showcase GIFs load on hover only) -->
+    <!-- Preconnect to external image CDNs so DNS+TLS happens early -->
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
     <link rel="preconnect" href="https://motionsites.ai" crossorigin />
     <link rel="preconnect" href="https://image.mux.com" crossorigin />
     <link rel="preconnect" href="https://i.pravatar.cc" crossorigin />
 
-    <!-- Preload critical above-the-fold assets -->
+    <!-- Preload the logo (above the fold) -->
     <link rel="preload" as="image" href="/logo.webp" />
-    <link rel="preload" as="image" href="/portal/world-bg.webp" />
-    <link rel="preload" as="image" href="/portal/portal-frame.webp" />
 
     <title>Web Studio — Smart Sites That Win Clients</title>
   </head>

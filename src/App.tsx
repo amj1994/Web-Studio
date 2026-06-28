@@ -122,15 +122,15 @@ const TiltCard = ({ children, className, style }: { children: ReactNode; classNa
    IMAGE ASSETS — portal / world / curtains (per spec)
    ========================================================================= */
 const PORTAL_BG =
-  '/portal/portal-frame.webp'
+  'https://res.cloudinary.com/dy5er7kv5/image/upload/q_auto/f_auto/v1779707217/image_1_vdzwae.png'
 const CURTAIN_LEFT =
-  '/portal/curtain-left.webp'
+  'https://res.cloudinary.com/dy5er7kv5/image/upload/q_auto/f_auto/v1779706559/curtain_left_znkmva.png'
 const CURTAIN_RIGHT =
-  '/portal/curtain-right.webp'
+  'https://res.cloudinary.com/dy5er7kv5/image/upload/q_auto/f_auto/v1779706564/curtain_right_paeyym.png'
 const WORLD_BG =
-  '/portal/world-bg.webp'
+  'https://res.cloudinary.com/dy5er7kv5/image/upload/q_auto/f_auto/v1779706392/image_2_gkcdlx.png'
 const BOTTOM_CLOUDS =
-  '/portal/bottom-clouds.webp'
+  'https://res.cloudinary.com/dy5er7kv5/image/upload/q_auto/f_auto/v1779706555/bottom_clouds_xskut6.png'
 
 /* =========================================================================
    FEATURED MOTIONSITES.AI SHOWCASES — arc slider flashcards
@@ -140,30 +140,29 @@ interface FeatureCard {
   desc: string
   color: string
   img: string
-  poster: string
   tag: string
 }
 
 const FEATURE_CARDS: FeatureCard[] = [
-  { title: 'SkyElite Jets',      desc: 'Private-jet charter, cinematic motion',          color: '#f3cdd6', img: 'https://motionsites.ai/assets/hero-skyelite-preview-DHaZIgUv.gif',                poster: '/showcase/skyelite-poster.webp',      tag: 'Landing' },
-  { title: 'Aetheris Voyage',    desc: 'Dreamlike drift through weightless calm',         color: '#dcedc2', img: 'https://motionsites.ai/assets/hero-aetheris-voyage-preview-BGJn1z4t.gif',          poster: '/showcase/aetheris-poster.webp',      tag: 'Hero' },
-  { title: 'Velorah',            desc: 'Dark agency presence carved in motion',            color: '#c3e3f4', img: 'https://motionsites.ai/assets/hero-velorah-preview-CJNTtbpd.gif',                  poster: '/showcase/velorah-poster.webp',       tag: 'Agency' },
-  { title: 'Liquid Glass',       desc: 'Glassmorphic surfaces, liquid light',              color: '#f0e4c0', img: 'https://motionsites.ai/assets/hero-liquid-glass-agency-preview-Cr5Q9-lc.gif',     poster: '/showcase/liquidglass-poster.webp',   tag: 'Landing' },
-  { title: 'Organic Odyssey',    desc: 'Living organic shapes that breathe on scroll',     color: '#dcd2f2', img: 'https://image.mux.com/sgQrsXCnAqJBdTR1fwBPswK01vStFM8p00EtrhVrByCuY/animated.webp?width=640&fps=15', poster: '/showcase/organic-poster.webp',  tag: 'Hero' },
-  { title: 'Dreamcore',          desc: 'Soft surreal landscapes from another dream',       color: '#f3cdd6', img: 'https://image.mux.com/XG9nlYYapGLVCNhOUW015BeaSWZe1atIOtYJSfroBB8g/animated.webp?width=640&fps=15', poster: '/showcase/dreamcore-poster.webp', tag: 'Landing' },
-  { title: 'Urban Jungle',       desc: 'Bold city energy in print-grade type',             color: '#f0e4c0', img: 'https://motionsites.ai/assets/hero-urban-jungle-preview-DUD-6bVK.gif',            poster: '/showcase/urbanjungle-poster.webp',   tag: 'Landing' },
-  { title: 'Prisma Studio',      desc: 'Creative studio through prismatic light',           color: '#dcedc2', img: 'https://motionsites.ai/assets/hero-prisma-preview-D4QeI0Bn.gif',                  poster: '/showcase/prisma-poster.webp',       tag: 'Agency' },
-  { title: 'Aethera Studio',     desc: 'Atmospheric hero of starlit depth',                color: '#c3e3f4', img: 'https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif',                  poster: '/showcase/aethera-poster.webp',       tag: 'Hero' },
+  { title: 'SkyElite Jets',      desc: 'Private-jet charter, cinematic motion',          color: '#f3cdd6', img: 'https://motionsites.ai/assets/hero-skyelite-preview-DHaZIgUv.gif',                tag: 'Landing' },
+  { title: 'Aetheris Voyage',    desc: 'Dreamlike drift through weightless calm',         color: '#dcedc2', img: 'https://motionsites.ai/assets/hero-aetheris-voyage-preview-BGJn1z4t.gif',          tag: 'Hero' },
+  { title: 'Velorah',            desc: 'Dark agency presence carved in motion',            color: '#c3e3f4', img: 'https://motionsites.ai/assets/hero-velorah-preview-CJNTtbpd.gif',                  tag: 'Agency' },
+  { title: 'Liquid Glass',       desc: 'Glassmorphic surfaces, liquid light',              color: '#f0e4c0', img: 'https://motionsites.ai/assets/hero-liquid-glass-agency-preview-Cr5Q9-lc.gif',     tag: 'Landing' },
+  { title: 'Organic Odyssey',    desc: 'Living organic shapes that breathe on scroll',     color: '#dcd2f2', img: 'https://image.mux.com/sgQrsXCnAqJBdTR1fwBPswK01vStFM8p00EtrhVrByCuY/animated.webp?width=640&fps=15', tag: 'Hero' },
+  { title: 'Dreamcore',          desc: 'Soft surreal landscapes from another dream',       color: '#f3cdd6', img: 'https://image.mux.com/XG9nlYYapGLVCNhOUW015BeaSWZe1atIOtYJSfroBB8g/animated.webp?width=640&fps=15', tag: 'Landing' },
+  { title: 'Urban Jungle',       desc: 'Bold city energy in print-grade type',             color: '#f0e4c0', img: 'https://motionsites.ai/assets/hero-urban-jungle-preview-DUD-6bVK.gif',            tag: 'Landing' },
+  { title: 'Prisma Studio',      desc: 'Creative studio through prismatic light',           color: '#dcedc2', img: 'https://motionsites.ai/assets/hero-prisma-preview-D4QeI0Bn.gif',                  tag: 'Agency' },
+  { title: 'Aethera Studio',     desc: 'Atmospheric hero of starlit depth',                color: '#c3e3f4', img: 'https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif',                  tag: 'Hero' },
 ]
 
 const SHOWCASE_SITES: FeatureCard[] = [
   ...FEATURE_CARDS,
-  { title: 'Apex Pulse',         desc: 'Pulsing dark hero with kinetic type',              color: '#d8e4f0', img: 'https://image.mux.com/xKzY81Q7aYTP4DvBWsG501UrkzSbfpBSqSoXhL1vM1fo/animated.webp?width=640&fps=15', poster: '/showcase/apex-poster.webp',     tag: 'Landing' },
-  { title: 'Bold Studio',        desc: 'Agency hero with bold modular grids',             color: '#e8d4c0', img: 'https://image.mux.com/xXODVswlwrbuab005fgkLYqGNg9qxMZS92802jhmegjhE/animated.webp?width=640&fps=15', poster: '/showcase/bold-poster.webp',     tag: 'Hero' },
-  { title: 'Cosmic',             desc: 'Stellar nebula particles in motion',                color: '#c3d4f4', img: 'https://image.mux.com/ogtDSxKsLPBNVy61iAl8vl01GEFEftER2r7wu9t5olrU/animated.webp?width=640&fps=15', poster: '/showcase/cosmic-poster.webp',   tag: 'Hero' },
-  { title: 'Wellness Hero',      desc: 'Spa-grade calm with breathing motion',              color: '#dce4d0', img: 'https://image.mux.com/wkvojrtJ1OO6UFGIMBllQ9y02sGJ6hXGbpx00DUf2f8xs/animated.webp?width=640&fps=15', poster: '/showcase/wellness-poster.webp', tag: 'Hero' },
-  { title: 'Mythic Naturecore', desc: 'Mossy, mythic terrain in soft motion',               color: '#c0e0c8', img: 'https://image.mux.com/p2rqdIt93bi02G2aajLN9eOWifvK6xrBWDWy01yyypR5Q/animated.webp?width=640&fps=15', poster: '/showcase/mythic-poster.webp',   tag: 'Landing' },
-  { title: 'Cinematic Brand',    desc: 'Cinema-grade grain and pacing',                      color: '#dcd6f2', img: 'https://image.mux.com/Cof4v02cIwHUsB39bW4QTmhTzjnaZ4xXzWMvhAX01yqQs/animated.webp?width=640&fps=15', poster: '/showcase/cinematic-poster.webp', tag: 'Hero' },
+  { title: 'Apex Pulse',         desc: 'Pulsing dark hero with kinetic type',              color: '#d8e4f0', img: 'https://image.mux.com/xKzY81Q7aYTP4DvBWsG501UrkzSbfpBSqSoXhL1vM1fo/animated.webp?width=640&fps=15', tag: 'Landing' },
+  { title: 'Bold Studio',        desc: 'Agency hero with bold modular grids',             color: '#e8d4c0', img: 'https://image.mux.com/xXODVswlwrbuab005fgkLYqGNg9qxMZS92802jhmegjhE/animated.webp?width=640&fps=15', tag: 'Hero' },
+  { title: 'Cosmic',             desc: 'Stellar nebula particles in motion',                color: '#c3d4f4', img: 'https://image.mux.com/ogtDSxKsLPBNVy61iAl8vl01GEFEftER2r7wu9t5olrU/animated.webp?width=640&fps=15', tag: 'Hero' },
+  { title: 'Wellness Hero',      desc: 'Spa-grade calm with breathing motion',              color: '#dce4d0', img: 'https://image.mux.com/wkvojrtJ1OO6UFGIMBllQ9y02sGJ6hXGbpx00DUf2f8xs/animated.webp?width=640&fps=15', tag: 'Hero' },
+  { title: 'Mythic Naturecore', desc: 'Mossy, mythic terrain in soft motion',               color: '#c0e0c8', img: 'https://image.mux.com/p2rqdIt93bi02G2oajLN9eOWifvK6xrBWDWy01yyypR5Q/animated.webp?width=640&fps=15', tag: 'Landing' },
+  { title: 'Cinematic Brand',    desc: 'Cinema-grade grain and pacing',                      color: '#dcd6f2', img: 'https://image.mux.com/Cof4v02cIwHUsB39bW4QTmhTzjnaZ4xXzWMvhAX01yqQs/animated.webp?width=640&fps=15', tag: 'Hero' },
 ]
 
 /* =========================================================================
@@ -548,7 +547,7 @@ const ArcCardSlider = ({ cards, rotationOffset, isMobile }: { cards: FeatureCard
             boxShadow: '0 12px 44px rgba(80,40,60,0.32), 0 2px 10px rgba(0,0,0,0.45)',
             background: c.color,
           }}>
-            <div style={{ position: 'absolute', inset: 0, backgroundImage: `url("${c.poster}")`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: c.color }} />
+            <div style={{ position: 'absolute', inset: 0, backgroundImage: `url("${c.img}")`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: c.color }} />
             <div style={{ position: 'absolute', top: isMobile ? 8 : 10, left: isMobile ? 8 : 10, padding: '2px 7px', borderRadius: 999, background: 'rgba(255,255,255,0.9)', color: '#2a1410', fontFamily: "'Imprima', sans-serif", fontSize: 8, letterSpacing: '0.1em', textTransform: 'uppercase' }}>{c.tag}</div>
             <div style={{ position: 'absolute', top: isMobile ? 8 : 10, right: isMobile ? 8 : 10, width: 22, height: 22, borderRadius: '50%', border: '1.5px solid rgba(255,255,255,0.7)', color: 'rgba(255,255,255,0.95)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Imprima', sans-serif", fontSize: 9 }}>{String(i + 1).padStart(2, '0')}</div>
             {/* slim scrim only at the bottom — leaves ~80% of the website reveal visible */}
@@ -1685,21 +1684,14 @@ const SiteCard = ({ site }: { site: FeatureCard }) => {
           {site.title.toLowerCase().replace(/\s+/g, '')}.webstudio.tech
         </span>
       </div>
-      {/* image — static poster loads instantly; animated version swaps in on hover */}
+      {/* image — NOTHING overlays it */}
       <div style={{ position: 'relative', aspectRatio: '16 / 10', overflow: 'hidden', background: site.color }}>
-        <img src={site.poster} alt={`${site.title} — a smart website built by webstudio.tech`} loading="lazy" decoding="async" style={{
+        <img src={site.img} alt={`${site.title} — a smart website built by webstudio.tech`} loading="lazy" decoding="async" style={{
           position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
-          transition: `transform 0.6s ${EASE}, filter 0.6s ${EASE}, opacity 0.4s ease`,
+          transition: `transform 0.6s ${EASE}, filter 0.6s ${EASE}`,
           transform: hovered ? 'scale(1.06)' : 'scale(1)',
           filter: hovered ? 'saturate(1.1)' : 'saturate(0.92)',
-          opacity: hovered ? 0 : 1,
         }} />
-        {hovered && (
-          <img src={site.img} alt="" loading="eager" decoding="async" style={{
-            position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
-            transform: 'scale(1.06)', filter: 'saturate(1.1)',
-          }} />
-        )}
       </div>
       {/* content row BELOW the image — title / tag / desc all live here, never on top of the picture */}
       <div style={{ padding: '16px 18px 18px' }}>
