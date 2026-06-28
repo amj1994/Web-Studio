@@ -1295,7 +1295,7 @@ export default function App() {
         <header className="site-nav" style={{ position: 'absolute', top: 0, left: 0, right: 0, zIndex: 60, opacity: scene1Opacity }}>
           <nav style={{ maxWidth: 1560, margin: '0 auto', padding: isMobile ? '12px 20px' : '16px 40px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 20 }}>
             <a href="#top" aria-label="Web Studio — home" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-              <img src="/logo.png" alt="Web Studio" style={{ height: isMobile ? 56 : 72, width: 'auto', filter: 'drop-shadow(0 2px 10px rgba(0,0,0,0.45))' }} />
+              <img src="/logo.png" alt="Web Studio" style={{ height: isMobile ? 60 : 80, width: 'auto', filter: 'drop-shadow(0 2px 14px rgba(232,180,92,0.35))' }} />
             </a>
             {!isMobile && (
               <div style={{ display: 'flex', alignItems: 'center', gap: 34 }}>
@@ -1631,7 +1631,7 @@ export default function App() {
           <hr style={{ border: 'none', borderTop: `1px solid ${C.hairline}`, marginBottom: 36 }} />
           <div style={{ display: 'flex', justifyContent: 'space-between', gap: 32, flexWrap: 'wrap', alignItems: 'flex-start' }}>
             <div style={{ maxWidth: 340 }}>
-              <img src="/logo.png" alt="Web Studio" style={{ height: 110, width: 'auto' }} />
+              <img src="/logo.png" alt="Web Studio" style={{ height: 120, width: 'auto' }} />
               <p style={{ color: C.taupe, fontSize: '0.92rem', marginTop: 16, lineHeight: 1.5 }}>
                 The smart website + the inbound/outbound engine — sold as one infrastructure system, run under your brand.
               </p>
