@@ -144,25 +144,25 @@ interface FeatureCard {
 }
 
 const FEATURE_CARDS: FeatureCard[] = [
-  { title: 'SkyElite Jets',      desc: 'Private-jet charter, cinematic motion',          color: '#f3cdd6', img: 'https://motionsites.ai/assets/hero-skyelite-preview-DHaZIgUv.gif',                tag: 'Landing' },
-  { title: 'Aetheris Voyage',    desc: 'Dreamlike drift through weightless calm',         color: '#dcedc2', img: 'https://motionsites.ai/assets/hero-aetheris-voyage-preview-BGJn1z4t.gif',          tag: 'Hero' },
-  { title: 'Velorah',            desc: 'Dark agency presence carved in motion',            color: '#c3e3f4', img: 'https://motionsites.ai/assets/hero-velorah-preview-CJNTtbpd.gif',                  tag: 'Agency' },
-  { title: 'Liquid Glass',       desc: 'Glassmorphic surfaces, liquid light',              color: '#f0e4c0', img: 'https://motionsites.ai/assets/hero-liquid-glass-agency-preview-Cr5Q9-lc.gif',     tag: 'Landing' },
-  { title: 'Organic Odyssey',    desc: 'Living organic shapes that breathe on scroll',     color: '#dcd2f2', img: 'https://image.mux.com/sgQrsXCnAqJBdTR1fwBPswK01vStFM8p00EtrhVrByCuY/animated.webp?width=640&fps=15', tag: 'Hero' },
-  { title: 'Dreamcore',          desc: 'Soft surreal landscapes from another dream',       color: '#f3cdd6', img: 'https://image.mux.com/XG9nlYYapGLVCNhOUW015BeaSWZe1atIOtYJSfroBB8g/animated.webp?width=640&fps=15', tag: 'Landing' },
-  { title: 'Urban Jungle',       desc: 'Bold city energy in print-grade type',             color: '#f0e4c0', img: 'https://motionsites.ai/assets/hero-urban-jungle-preview-DUD-6bVK.gif',            tag: 'Landing' },
-  { title: 'Prisma Studio',      desc: 'Creative studio through prismatic light',           color: '#dcedc2', img: 'https://motionsites.ai/assets/hero-prisma-preview-D4QeI0Bn.gif',                  tag: 'Agency' },
-  { title: 'Aethera Studio',     desc: 'Atmospheric hero of starlit depth',                color: '#c3e3f4', img: 'https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif',                  tag: 'Hero' },
+  { title: 'SkyElite Jets',      desc: 'Private-jet charter, cinematic motion',          color: '#f3cdd6', img: '/showcase/skyelite.webp',      tag: 'Landing' },
+  { title: 'Aetheris Voyage',    desc: 'Dreamlike drift through weightless calm',         color: '#dcedc2', img: '/showcase/aetheris.webp',      tag: 'Hero' },
+  { title: 'Velorah',            desc: 'Dark agency presence carved in motion',            color: '#c3e3f4', img: '/showcase/velorah.webp',       tag: 'Agency' },
+  { title: 'Liquid Glass',       desc: 'Glassmorphic surfaces, liquid light',              color: '#f0e4c0', img: '/showcase/liquidglass.webp',   tag: 'Landing' },
+  { title: 'Organic Odyssey',    desc: 'Living organic shapes that breathe on scroll',     color: '#dcd2f2', img: '/showcase/organic.webp',       tag: 'Hero' },
+  { title: 'Dreamcore',          desc: 'Soft surreal landscapes from another dream',       color: '#f3cdd6', img: '/showcase/dreamcore.webp',     tag: 'Landing' },
+  { title: 'Urban Jungle',       desc: 'Bold city energy in print-grade type',             color: '#f0e4c0', img: '/showcase/urbanjungle.webp',   tag: 'Landing' },
+  { title: 'Prisma Studio',      desc: 'Creative studio through prismatic light',           color: '#dcedc2', img: '/showcase/prisma.webp',        tag: 'Agency' },
+  { title: 'Aethera Studio',     desc: 'Atmospheric hero of starlit depth',                color: '#c3e3f4', img: '/showcase/aethera.webp',       tag: 'Hero' },
 ]
 
 const SHOWCASE_SITES: FeatureCard[] = [
   ...FEATURE_CARDS,
-  { title: 'Apex Pulse',         desc: 'Pulsing dark hero with kinetic type',              color: '#d8e4f0', img: 'https://image.mux.com/xKzY81Q7aYTP4DvBWsG501UrkzSbfpBSqSoXhL1vM1fo/animated.webp?width=640&fps=15', tag: 'Landing' },
-  { title: 'Bold Studio',        desc: 'Agency hero with bold modular grids',             color: '#e8d4c0', img: 'https://image.mux.com/xXODVswlwrbuab005fgkLYqGNg9qxMZS92802jhmegjhE/animated.webp?width=640&fps=15', tag: 'Hero' },
-  { title: 'Cosmic',             desc: 'Stellar nebula particles in motion',                color: '#c3d4f4', img: 'https://image.mux.com/ogtDSxKsLPBNVy61iAl8vl01GEFEftER2r7wu9t5olrU/animated.webp?width=640&fps=15', tag: 'Hero' },
-  { title: 'Wellness Hero',      desc: 'Spa-grade calm with breathing motion',              color: '#dce4d0', img: 'https://image.mux.com/wkvojrtJ1OO6UFGIMBllQ9y02sGJ6hXGbpx00DUf2f8xs/animated.webp?width=640&fps=15', tag: 'Hero' },
-  { title: 'Mythic Naturecore', desc: 'Mossy, mythic terrain in soft motion',               color: '#c0e0c8', img: 'https://image.mux.com/p2rqdIt93bi02G2oajLN9eOWifvK6xrBWDWy01yyypR5Q/animated.webp?width=640&fps=15', tag: 'Landing' },
-  { title: 'Cinematic Brand',    desc: 'Cinema-grade grain and pacing',                      color: '#dcd6f2', img: 'https://image.mux.com/Cof4v02cIwHUsB39bW4QTmhTzjnaZ4xXzWMvhAX01yqQs/animated.webp?width=640&fps=15', tag: 'Hero' },
+  { title: 'Apex Pulse',         desc: 'Pulsing dark hero with kinetic type',              color: '#d8e4f0', img: '/showcase/apex.webp',          tag: 'Landing' },
+  { title: 'Bold Studio',        desc: 'Agency hero with bold modular grids',             color: '#e8d4c0', img: '/showcase/bold.webp',          tag: 'Hero' },
+  { title: 'Cosmic',             desc: 'Stellar nebula particles in motion',                color: '#c3d4f4', img: '/showcase/cosmic.webp',        tag: 'Hero' },
+  { title: 'Wellness Hero',      desc: 'Spa-grade calm with breathing motion',              color: '#dce4d0', img: '/showcase/wellness.webp',      tag: 'Hero' },
+  { title: 'Mythic Naturecore', desc: 'Mossy, mythic terrain in soft motion',               color: '#c0e0c8', img: '/showcase/mythic.webp',        tag: 'Landing' },
+  { title: 'Cinematic Brand',    desc: 'Cinema-grade grain and pacing',                      color: '#dcd6f2', img: '/showcase/cinematic.webp',     tag: 'Hero' },
 ]
 
 /* =========================================================================
